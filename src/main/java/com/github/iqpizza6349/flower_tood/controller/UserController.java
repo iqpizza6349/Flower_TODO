@@ -28,7 +28,7 @@ public class UserController {
     public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
         new SecurityContextLogoutHandler().logout(request, response, SecurityContextHolder
                 .getContext().getAuthentication());
-        return "redirect:/";
+        return "redirect:/login";
     }
 
 }
